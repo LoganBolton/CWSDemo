@@ -2,3 +2,12 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+$("#testButton").click(function () {
+    //alert("test");
+    $("#testText").toggle();    
+});
+
+$("#testText").click(function () {
+    $("testText").toggle();
+});
