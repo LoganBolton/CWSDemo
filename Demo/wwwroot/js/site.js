@@ -4,10 +4,11 @@
 // Write your JavaScript code.
 
 $("#testButton").click(function () {
-    //alert("test");
-    $("#testText").toggle();    
+    $("testText").css("color", "red");
 });
 
-$("#testText").click(function () {
-    $("testText").toggle();
+$("#cssButton").click(function () {
+    var currentSize = parseInt($("#testText").css("font-size"));
+    var newSize = currentSize + 2;
+    $("#testText").css("font-size", newSize + "px");
 });
